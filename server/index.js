@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import connectDB from "./database/db.js";
 import userRoute from "./routes/user.route.js";
-
+import courseRoute from "./routes/course.route.js"
 
 
 
@@ -26,6 +26,7 @@ app.use(cors({
 const PORT= process.env.PORT||3000;
 
 app.use("/api/v1/user",userRoute);
+app.use("/api/v1/user",courseRoute);
 
 app.listen(PORT, ()=>{
     console.log(`Server is listening at port ${PORT}`);
