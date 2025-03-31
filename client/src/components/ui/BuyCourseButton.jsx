@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Button } from "./ui/button";
+import { Button } from "./button";
 import { useCreateCheckoutSessionMutation } from "@/features/api/purchaseApi";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
